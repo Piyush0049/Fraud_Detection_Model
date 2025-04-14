@@ -18,7 +18,7 @@ Handler.extensions_map={
     '': 'application/octet-stream', # Default
     }
 
-httpd = socketserver.TCPServer(("", PORT), Handler)
+httpd = socketserver.TCPServer(("0.0.0.0", PORT), Handler)
 
 print("Running at http://localhost:" + str(PORT))
 httpd.serve_forever()
