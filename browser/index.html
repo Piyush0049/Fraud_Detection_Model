@@ -102,7 +102,7 @@
   <div class="container">
     <h1>Fraud Detection Inference</h1>
     <p>
-      <input type="text" id="features" placeholder="Enter features (e.g., 2.3, 1.4, 5.6)" />
+      <input type="text" id="features" placeholder="Enter features (e.g. 300, 8, 26, 93, 4, 8, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0)" />
     </p>
     <p>
       <button id="run-inference">Run Inference</button>
@@ -118,7 +118,7 @@
       await classifier.init();
 
       const project = classifier.getProjectInfo();
-      document.querySelector('h1').textContent = `🔍 ${project.name} v${project.deploy_version}`;
+      document.querySelector('h1').textContent = `🔍 Ecommerce Fraud Detection`;
 
       document.querySelector('#run-inference').onclick = () => {
         try {
